@@ -1,0 +1,165 @@
+/* === Gaya Utama dengan Nuansa Universitas Terbuka === */
+.table-wrapper {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  border: 2px solid #0055a5; /* Biru UT */
+}
+
+/* === Tabel === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: linear-gradient(135deg, #0055a5 0%, #f7c600 100%);
+}
+
+thead th {
+  color: #ffffff;
+  padding: 18px 15px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #e6e6e6;
+  transition: all 0.3s ease;
+}
+
+tbody tr:hover {
+  background-color: #f0f6ff; /* lembut khas biru UT */
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+tbody td {
+  padding: 16px 15px;
+  color: #333333;
+  font-size: 14px;
+}
+
+/* === Penekanan pada Kode Barang === */
+.kode-barang {
+  font-weight: 700;
+  color: #0055a5;
+}
+
+/* === Badge Stok === */
+.stok-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.stok-tinggi {
+  background-color: #e0f5e6;
+  color: #1b5e20;
+  border: 1px solid #81c784;
+}
+
+.stok-sedang {
+  background-color: #fff8e1;
+  color: #ff8f00;
+  border: 1px solid #ffd54f;
+}
+
+.stok-rendah {
+  background-color: #fdecea;
+  color: #c62828;
+  border: 1px solid #ef9a9a;
+}
+
+/* === Tombol Detail === */
+.btn-details {
+  background: linear-gradient(135deg, #0055a5 0%, #f7c600 100%);
+  color: #ffffff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 85, 165, 0.3);
+}
+
+.btn-details:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 85, 165, 0.5);
+}
+
+.btn-details:active {
+  transform: translateY(0);
+}
+
+/* === Detail Barang === */
+.detail-item {
+  display: flex;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.detail-label {
+  font-weight: 700;
+  color: #0055a5;
+  width: 150px;
+  flex-shrink: 0;
+}
+
+.detail-value {
+  color: #333333;
+  flex: 1;
+}
+
+/* === Sampul Buku / Gambar Barang === */
+.book-cover {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  display: block;
+  border: 3px solid #f7c600; /* Aksen kuning UT */
+}
+
+/* === Responsif untuk Mobile === */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6em;
+    color: #0055a5;
+  }
+
+  .table-wrapper {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 900px;
+  }
+
+  .detail-item {
+    flex-direction: column;
+  }
+
+  .detail-label {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
